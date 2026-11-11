@@ -1,0 +1,28 @@
+<section>
+  <h2>Local DICOM Import</h2>
+
+  <p>Select your DICOM files:</p>
+
+  <input
+    type="file"
+    multiple
+    accept=".dcm"
+    (change)="onFilesSelected($event)"
+  >
+
+  <p>Files selected: {{ fileCount }}</p>
+
+  <p>Selected file: {{ selectedFileName }}</p>
+
+  <h3>Selected files</h3>
+
+  <ul>
+    @for (file of selectedFiles; track $index) {
+      <li>
+        <strong>{{ file.name }}</strong>
+        <p>Size: {{ file.sizeKB }} KB</p>
+        <p>Modified: {{ file.lastModified.toLocaleDateString() }}</p>
+      </li>
+    }
+  </ul>
+</section>

@@ -1,15 +1,3 @@
 <h1>OpenDICOM Research Viewer</h1>
-<p> Select your DICOM files</p>
 
-<input type="file" multiple accept=".dcm" (change)="onFilesSelected($event)">
-
-<p>Files selected: {{ fileCount }}</p>
-<p>Selected file: {{ selectedFileName }}</p>
-
-<h2>Selected files</h2>
-
-<ul>
-  @for (file of selectedFiles; track $index) {
-    <li>{{ file.name }}</li>
-  }
-</ul>
+<app-local-import></app-local-import>
