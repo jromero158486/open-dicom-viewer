@@ -1,0 +1,10 @@
+<section>
+    <h2> CT Viewer</h2>
+
+    <input type="file" accept=".dcm" (change)="loadDicom($event)">
+
+    <p>{{ status }}</p>
+
+    <div #viewport class = "ct-viewport"></div>
+
+    </section>

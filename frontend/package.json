@@ -20,9 +20,13 @@
     "@angular/platform-server": "^22.2.0",
     "@angular/router": "^22.2.0",
     "@angular/ssr": "^22.2.6",
+    "@cornerstonejs/core": "^5.14.0",
+    "@cornerstonejs/dicom-image-loader": "^5.14.0",
+    "events": "^3.3.0",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "url": "^0.11.4"
   },
   "devDependencies": {
     "@angular/build": "^22.2.6",
@@ -30,6 +34,7 @@
     "@angular/compiler-cli": "^22.2.0",
     "@types/express": "^5.0.1",
     "@types/node": "^22.12.0",
+    "esbuild": "^0.28.2",
     "jsdom": "^30.0.0",
     "prettier": "^3.8.1",
     "typescript": "~6.0.2",

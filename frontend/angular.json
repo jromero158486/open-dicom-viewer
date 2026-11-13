@@ -68,6 +68,13 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "prebundle": {
+              "exclude": [
+                "@cornerstonejs/dicom-image-loader"
+              ]
+            }
+          },
           "configurations": {
             "production": {
               "buildTarget": "frontend:build:production"
